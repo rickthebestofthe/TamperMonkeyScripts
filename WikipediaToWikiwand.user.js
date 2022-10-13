@@ -1,5 +1,7 @@
 // ==UserScript==
 // @name                Wikipedia to Wikiwand
+// @name:zh-CN          Wikipedia to Wikiwand
+// @name:zh-TW          Wikipedia to Wikiwand
 // @namespace           https://github.com/showchi/TamperMonkeyScripts
 // @version             0.1
 // @description         Redirect Wikipedia to Wikiwand for a modern browsing experience.
