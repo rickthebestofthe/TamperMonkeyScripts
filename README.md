@@ -1,4 +1,4 @@
 # TamperMonkeyScripts
 
-- WikipediaToWikiwand.user.js
+### WikipediaToWikiwand.user.js
 重定向 Wikipedia 到 Wikiwand，保留当前语种
