@@ -18,10 +18,10 @@
     'use strict';
 
     var wikiLocale = new RegExp('\/\/(.*).wikipedia');
-    console.log(window.location.href);
-    console.log(window.location.host);
-    if (wikiLocale.test(window.location.href)) {
-        var language=window.location.host.split('.')[0];
-        window.location.replace(window.location.href.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
+    var url = window.location.href;
+    if (wikiLocale.test(url)) {
+        var host = window.location.host;
+        var language = host.split('.')[0];
+        window.location.replace(url.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
     }
 })();
