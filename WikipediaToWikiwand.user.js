@@ -14,30 +14,14 @@
 // @grant               none
 // ==/UserScript==
 
-window.addEventListener('mousedown', event => {
-  const a = event.target.closest('a');
-  if (a) {
-
-    a.onmousedown = null;
-    var wikiLocale = new RegExp('\/\/(.*).wikipedia');
-    var url = a.href;
-
-    if (wikiLocale.test(url)) {
-
-      var language = url.host.split('.')[0];
-      var newHref = url.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language);
-      a.href = newHref;
-
-    }
-  }
-}, true);
-
 (function() {
     'use strict';
 
-//     var wikiLocale = new RegExp('\/\/(.*).wikipedia');
-//     if (wikiLocale.test(window.location.href)) {
-//         var language=window.location.host.split('.')[0];
-//         window.location.replace(window.location.href.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
-//     }
+    var wikiLocale = new RegExp('\/\/(.*).wikipedia');
+    console.log(window.location.href);
+    console.log(window.location.host);
+    if (wikiLocale.test(window.location.href)) {
+        var language=window.location.host.split('.')[0];
+        window.location.replace(window.location.href.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
+    }
 })();
