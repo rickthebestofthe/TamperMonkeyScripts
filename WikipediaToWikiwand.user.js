@@ -35,9 +35,9 @@ window.addEventListener('mousedown', event => {
 (function() {
     'use strict';
 
-    var wikiLocale = new RegExp('\/\/(.*).wikipedia');
-    if (wikiLocale.test(window.location.href)) {
-        var language=window.location.host.split('.')[0];
-        window.location.replace(window.location.href.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
-    }
+//     var wikiLocale = new RegExp('\/\/(.*).wikipedia');
+//     if (wikiLocale.test(window.location.href)) {
+//         var language=window.location.host.split('.')[0];
+//         window.location.replace(window.location.href.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
+//     }
 })();
