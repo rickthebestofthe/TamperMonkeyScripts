@@ -22,6 +22,6 @@
     if (wikiLocale.test(url)) {
         var host = window.location.host;
         var language = host.split('.')[0];
-        window.location.replace(url.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));   
+        window.location.replace(url.replace(/[^\s]*\.wikipedia\.org\/[\w-]+/, 'https://www.wikiwand.com/'+ language));
     }
 })();
